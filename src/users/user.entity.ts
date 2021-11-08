@@ -19,6 +19,10 @@ export class User {
   @ApiProperty({ example: 'Vuitton', description: 'The lastName of the User' })
   lastName: string;
   
+  @Column()
+  @ApiProperty()
+  password: string;
+  
   @Column({ default: true })
   @ApiProperty()
   isActive: boolean;
