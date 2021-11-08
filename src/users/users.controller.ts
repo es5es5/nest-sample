@@ -9,7 +9,6 @@ import { UsersService } from './users.service';
 @Controller('users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
-
   @Post()
   @ApiOperation({ summary: 'Create user' })
   @ApiResponse({ status: 403, description: 'Forbidden.' })

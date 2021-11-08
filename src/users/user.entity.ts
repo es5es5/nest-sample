@@ -5,20 +5,20 @@ import { ApiProperty } from '@nestjs/swagger';
 export class User {
   /**
    * The name of the User
-   * @example Louis
+   * @example Louis Vuitton
    */
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
-  @ApiProperty({ example: 1, description: 'The firstName of the User' })
+  @ApiProperty({ example: 'Louis', description: 'The firstName of the User' })
   firstName: string;
   
   @Column()
-  @ApiProperty({ example: 1, description: 'The lastName of the User' })
+  @ApiProperty({ example: 'Vuitton', description: 'The lastName of the User' })
   lastName: string;
   
   @Column({ default: true })
-  @ApiProperty({ example: 1, description: 'The active column' })
+  @ApiProperty()
   isActive: boolean;
 }
