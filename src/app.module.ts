@@ -10,7 +10,7 @@ import { UsersModule } from './users/users.module';
       port: 3306,
       username: 'root',
       password: 'root',
-      database: 'sample_nest',
+      database: 'eun_woong',
       autoLoadEntities: true,
       synchronize: true,
     }),
