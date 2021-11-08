@@ -6,7 +6,11 @@ export class CreateUserDto {
   @ApiProperty({ example: 'Louis', description: 'The first name of the User' })
   readonly firstName: string;
 
-  @ApiProperty()
+  @IsString()
   @ApiProperty({ example: 'Vuitton', description: 'The last name of the User' })
   readonly lastName: string;
+
+  @IsString()
+  @ApiProperty()
+  readonly password: string;
 }

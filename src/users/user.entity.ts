@@ -14,15 +14,15 @@ export class User {
   @Column()
   @ApiProperty({ example: 'Louis', description: 'The firstName of the User' })
   firstName: string;
-  
+
   @Column()
   @ApiProperty({ example: 'Vuitton', description: 'The lastName of the User' })
   lastName: string;
-  
+
   @Column()
   @ApiProperty()
   password: string;
-  
+
   @Column({ default: true })
   @ApiProperty()
   isActive: boolean;
